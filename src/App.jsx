@@ -17,7 +17,7 @@ transform: rotate(360deg);
 const CanadaStyledIcon = styled(FaCanadianMapleLeaf)`
 font-size:40px;
 animation: ${rotate} 3s linear infinite ;
-color:#c0392b;
+color: ${ (props) => props.theme.colors.canada };
 `
 
 const StyledImg = styled.img`

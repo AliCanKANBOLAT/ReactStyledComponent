@@ -6,9 +6,9 @@ border: 1px solid #3498db;
 border-radius:6px;
 background-color: ${ (props) => {
     console.log(props)
-    return props?.$primary ? "#3498db":"transparent"
+    return props?.$primary ? props.theme.colors.primary:"transparent"
 } };
-color:${ ({$primary}) => $primary ? "white":"black" };
+color:${ ({$primary,theme }) => $primary ? theme.colors.textColor:"black" };
 
 &:hover {
     background-color: ${(props) => props?.$primary ? "#1abc9c" : "#e67e22"};
