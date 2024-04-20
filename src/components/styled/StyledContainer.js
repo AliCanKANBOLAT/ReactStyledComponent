@@ -6,5 +6,9 @@ padding: 20px;
 width:800px;
 margin: 0 auto;
 background-color:#ecf0f1;
-padding:20px;
+
+
+&>h1 {
+    color: #e74c3c;
+}
 `
