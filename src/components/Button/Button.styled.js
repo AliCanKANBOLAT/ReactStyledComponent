@@ -38,9 +38,17 @@ export const CoolButton = styled(StyledButton)`
   box-shadow: 0 0 20px #eee;
   border-radius: 10px;
   display: block;
-
+  text-decoration: none;
+  
  &:hover {
  background-position: right center; /* change the direction of the change here */
  color: #fff;
  text-decoration: none;
           }`
+
+export const SubmitButton = styled(StrongButton).attrs({
+    type:"submit"
+})`
+font-size: 20px;
+color: red;
+`

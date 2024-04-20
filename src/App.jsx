@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { StyledContainer } from './components/styled/StyledContainer'
 import { Button } from './components/Button'
-import { CoolButton, StrongButton } from './components/Button/Button.styled'
+import { CoolButton, StrongButton, SubmitButton } from './components/Button/Button.styled'
 
 
 
@@ -18,14 +18,17 @@ function App() {
         <h1>button has styled...</h1>
         </Button>
         <br />
-        <StrongButton $primary>
+        <StrongButton $primary >
         Strong Button
         </StrongButton>
         <br />
-        <CoolButton>
+        <CoolButton as="a" href="http://google.com" target="_blank">
           Coool Button...
         </CoolButton>
         <br />
+        <SubmitButton $primary>
+          Submit...
+        </SubmitButton>
     </StyledContainer>
     <h1>styled out of class..</h1>
 
